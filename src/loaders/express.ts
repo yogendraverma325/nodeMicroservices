@@ -8,6 +8,10 @@ import hpp from 'hpp';
 import morgan from 'morgan';
 import passport from 'passport';
 
+// Import swagger dependencies and document
+import swaggerUi from 'swagger-ui-express';
+import swaggerDocument from '../swagger.json' assert { type: 'json' };
+
 // Import your routes and middleware
 // import validateToken from './yourValidateTokenPath';
 // import userRoutes from './yourUserRoutesPath';
@@ -20,9 +24,7 @@ import passport from 'passport';
 // import notificationRoutes from './yourNotificationRoutesPath';
 // import errorController from './yourErrorControllerPath';
 
-// Import swagger dependencies and document
 import { dirname } from 'path';
-import swaggerUi from 'swagger-ui-express';
 import { fileURLToPath } from 'url';
 import { corsUrl, environment } from '../config.js';
 import {
@@ -61,6 +63,9 @@ const expressLoader = (app: Application): void => {
       }),
     );
     app.use(cors({ origin: corsUrl, optionsSuccessStatus: 200 })); // cross-origin
+    // Swagger setup
+    app.use('/api-docs', swaggerUi.serve);
+    app.get('/api-docs', swaggerUi.setup(swaggerDocument));
 
     app.use('/', routes);
     // catch 404 and forward to error handler
@@ -114,10 +119,6 @@ const expressLoader = (app: Application): void => {
     //   app.use('/api/v1/issue', issueRoutes);
     //   app.use('/api/v1/project', projectRoutes);
     //   app.use('/api/v1', notificationRoutes);
-
-    // Swagger setup
-    app.use('/api-docs', swaggerUi.serve);
-    //   app.get('/api-docs', swaggerUi.setup(swaggerDocument));
 
     // Port and server initialization
     app.set('port', process.env.PORT);
