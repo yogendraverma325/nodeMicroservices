@@ -1,11 +1,13 @@
 import dotEnv from 'dotenv';
 import express from 'express';
 import http from 'http';
+import cache from './cache/index.js';
 import { port } from './config.js';
 import Logger from './core/Logger.js';
 import loader from './loaders/index.js';
 import initializeSocket from './loaders/socket.io.js';
 
+cache; // cache initialization
 const app = express();
 
 // Socket.io
@@ -23,4 +25,5 @@ server
     console.log(`SERVER UP on ${process.env.PORT}`);
   })
   .on('error', (e) => Logger.error(e));
+
 loader(app);
