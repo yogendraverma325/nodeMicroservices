@@ -1,0 +1,152 @@
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T03:26:20.210Z"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T03:27:20.738Z"}
+{"level":"error","message":"500 - Cast to ObjectId failed for value \"LEARNER\" (type string) at path \"_id\" for model \"Role\" - /auth/signup - POST - ::1","timestamp":"2023-11-30T03:27:20.753Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\"LEARNER\"","timestamp":"2023-11-30T03:27:20.755Z","value":"LEARNER","valueType":"string"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T03:31:46.639Z"}
+{"level":"error","message":"500 - Expected ',' or '}' after property value in JSON at position 98 - /auth/signup - POST - ::1","timestamp":"2023-11-30T03:31:48.814Z"}
+{"body":"{\r\n    \"name\": \"John Doe\",\r\n    \"email\": \"john.doe@example.com\",\r\n    \"password\": \"test1234\"\r\n    \"\"\r\n}","expose":true,"level":"error","status":400,"statusCode":400,"timestamp":"2023-11-30T03:31:48.815Z","type":"entity.parse.failed"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T03:32:06.049Z"}
+{"level":"error","message":"500 - Cast to ObjectId failed for value \"LEARNER\" (type string) at path \"_id\" for model \"Role\" - /auth/signup - POST - ::1","timestamp":"2023-11-30T03:32:06.074Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\"LEARNER\"","timestamp":"2023-11-30T03:32:06.077Z","value":"LEARNER","valueType":"string"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T03:37:45.327Z"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T03:37:57.113Z"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T03:37:57.711Z"}
+{"level":"error","message":"500 - Cast to ObjectId failed for value \"LEARNER\" (type string) at path \"_id\" for model \"Role\" - /auth/signup - POST - ::1","timestamp":"2023-11-30T03:37:57.728Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\"LEARNER\"","timestamp":"2023-11-30T03:37:57.730Z","value":"LEARNER","valueType":"string"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T03:40:09.525Z"}
+{"level":"error","message":"500 - Cast to ObjectId failed for value \"LEARNER\" (type string) at path \"_id\" for model \"Role\" - /auth/signup - POST - ::1","timestamp":"2023-11-30T03:40:09.533Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\"LEARNER\"","timestamp":"2023-11-30T03:40:09.535Z","value":"LEARNER","valueType":"string"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T03:40:11.501Z"}
+{"level":"error","message":"500 - Cast to ObjectId failed for value \"LEARNER\" (type string) at path \"_id\" for model \"Role\" - /auth/signup - POST - ::1","timestamp":"2023-11-30T03:40:11.509Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\"LEARNER\"","timestamp":"2023-11-30T03:40:11.510Z","value":"LEARNER","valueType":"string"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T03:40:16.116Z"}
+{"level":"error","message":"500 - Cast to ObjectId failed for value \"LEARNER\" (type string) at path \"_id\" for model \"Role\" - /auth/signup - POST - ::1","timestamp":"2023-11-30T03:40:16.123Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\"LEARNER\"","timestamp":"2023-11-30T03:40:16.124Z","value":"LEARNER","valueType":"string"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T03:41:42.644Z"}
+{"level":"error","message":"role is not allowed","timestamp":"2023-11-30T03:41:42.649Z"}
+{"level":"error","message":"500 - Expected double-quoted property name in JSON at position 95 - /auth/signup - POST - ::1","timestamp":"2023-11-30T03:42:13.337Z"}
+{"body":"{\r\n    \"name\": \"John Doe\",\r\n    \"email\": \"john.doe@example.com\",\r\n    \"password\": \"test1234\",\r\n}","expose":true,"level":"error","status":400,"statusCode":400,"timestamp":"2023-11-30T03:42:13.338Z","type":"entity.parse.failed"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T03:42:16.760Z"}
+{"level":"error","message":"500 - Cast to ObjectId failed for value \"LEARNER\" (type string) at path \"_id\" for model \"Role\" - /auth/signup - POST - ::1","timestamp":"2023-11-30T03:42:16.768Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\"LEARNER\"","timestamp":"2023-11-30T03:42:16.769Z","value":"LEARNER","valueType":"string"}
+{"level":"error","message":"x-api-key is not allowed to be empty","timestamp":"2023-11-30T03:46:00.210Z"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T03:46:08.564Z"}
+{"level":"error","message":"500 - Cast to ObjectId failed for value \"LEARNER\" (type string) at path \"_id\" for model \"Role\" - /auth/signup - POST - ::1","timestamp":"2023-11-30T03:46:08.571Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\"LEARNER\"","timestamp":"2023-11-30T03:46:08.572Z","value":"LEARNER","valueType":"string"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T04:35:34.599Z"}
+{"level":"error","message":"500 - Cast to ObjectId failed for value \"LEARNER\" (type string) at path \"_id\" for model \"Role\" - /auth/signup - POST - ::1","timestamp":"2023-11-30T04:35:34.604Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\"LEARNER\"","timestamp":"2023-11-30T04:35:34.605Z","value":"LEARNER","valueType":"string"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T05:20:06.012Z"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T05:25:33.914Z"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T05:25:39.147Z"}
+{"level":"error","message":"500 - Cast to ObjectId failed for value \"LEARNER\" (type string) at path \"_id\" for model \"Role\" - /auth/signup - POST - ::1","timestamp":"2023-11-30T05:25:39.160Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\"LEARNER\"","timestamp":"2023-11-30T05:25:39.162Z","value":"LEARNER","valueType":"string"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T05:32:23.255Z"}
+{"level":"error","message":"500 - Cast to ObjectId failed for value \"LEARNER\" (type string) at path \"_id\" for model \"Role\" - /auth/signup - POST - ::1","timestamp":"2023-11-30T05:32:23.265Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\"LEARNER\"","timestamp":"2023-11-30T05:32:23.266Z","value":"LEARNER","valueType":"string"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T05:34:21.420Z"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T05:34:57.131Z"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T05:35:51.079Z"}
+{"level":"error","message":"500 - Cast to ObjectId failed for value \"LEARNER\" (type string) at path \"_id\" for model \"Role\" - /auth/signup - POST - ::1","timestamp":"2023-11-30T05:35:51.092Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\"LEARNER\"","timestamp":"2023-11-30T05:35:51.098Z","value":"LEARNER","valueType":"string"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T05:36:39.537Z"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T05:38:08.577Z"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T05:38:21.883Z"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T05:39:09.223Z"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T05:39:11.351Z"}
+{"level":"error","message":"500 - Cast to ObjectId failed for value \"LEARNER\" (type string) at path \"_id\" for model \"Role\" - /auth/signup - POST - ::1","timestamp":"2023-11-30T05:39:11.401Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\"LEARNER\"","timestamp":"2023-11-30T05:39:11.405Z","value":"LEARNER","valueType":"string"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T05:40:25.304Z"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T05:42:44.937Z"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T05:43:13.834Z"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T05:43:25.002Z"}
+{"level":"error","message":"500 - Cast to ObjectId failed for value \"LEARNER\" (type string) at path \"_id\" for model \"Role\" - /auth/signup - POST - ::1","timestamp":"2023-11-30T05:43:25.012Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\"LEARNER\"","timestamp":"2023-11-30T05:43:25.013Z","value":"LEARNER","valueType":"string"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T05:46:29.176Z"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T05:46:54.807Z"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T05:47:43.782Z"}
+{"level":"error","message":"500 - Cast to ObjectId failed for value \"LEARNER\" (type string) at path \"_id\" for model \"Role\" - /auth/signup - POST - ::1","timestamp":"2023-11-30T05:47:43.791Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\"LEARNER\"","timestamp":"2023-11-30T05:47:43.792Z","value":"LEARNER","valueType":"string"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T05:52:16.320Z"}
+{"level":"error","message":"500 - Cast to ObjectId failed for value \"LEARNER\" (type string) at path \"_id\" for model \"Role\" - /auth/signup - POST - ::1","timestamp":"2023-11-30T05:52:16.329Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\"LEARNER\"","timestamp":"2023-11-30T05:52:16.329Z","value":"LEARNER","valueType":"string"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T05:53:24.712Z"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T05:53:24.975Z"}
+{"level":"error","message":"500 - Cast to ObjectId failed for value \"LEARNER\" (type string) at path \"_id\" for model \"Role\" - /auth/signup - POST - ::1","timestamp":"2023-11-30T05:53:24.999Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\"LEARNER\"","timestamp":"2023-11-30T05:53:25.001Z","value":"LEARNER","valueType":"string"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T06:00:49.082Z"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T06:00:49.309Z"}
+{"level":"error","message":"500 - Cast to ObjectId failed for value \"LEARNER\" (type string) at path \"_id\" for model \"Role\" - /auth/signup - POST - ::1","timestamp":"2023-11-30T06:00:49.390Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\"LEARNER\"","timestamp":"2023-11-30T06:00:49.392Z","value":"LEARNER","valueType":"string"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T06:02:52.573Z"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T06:02:53.377Z"}
+{"level":"error","message":"500 - Cast to ObjectId failed for value \"LEARNER\" (type string) at path \"_id\" for model \"Role\" - /auth/signup - POST - ::1","timestamp":"2023-11-30T06:02:53.394Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\"LEARNER\"","timestamp":"2023-11-30T06:02:53.399Z","value":"LEARNER","valueType":"string"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T06:04:10.842Z"}
+{"level":"error","message":"500 - Cast to ObjectId failed for value \"LEARNER\" (type string) at path \"_id\" for model \"Role\" - /auth/signup - POST - ::1","timestamp":"2023-11-30T06:04:10.851Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\"LEARNER\"","timestamp":"2023-11-30T06:04:10.852Z","value":"LEARNER","valueType":"string"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T06:04:23.175Z"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T06:04:48.902Z"}
+{"level":"error","message":"500 - Cast to ObjectId failed for value \"LEARNER\" (type string) at path \"_id\" for model \"Role\" - /auth/signup - POST - ::1","timestamp":"2023-11-30T06:04:48.911Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\"LEARNER\"","timestamp":"2023-11-30T06:04:48.912Z","value":"LEARNER","valueType":"string"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T06:05:22.731Z"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T06:05:24.290Z"}
+{"level":"error","message":"500 - Cast to ObjectId failed for value \"LEARNER\" (type string) at path \"_id\" for model \"Role\" - /auth/signup - POST - ::1","timestamp":"2023-11-30T06:05:24.311Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\"LEARNER\"","timestamp":"2023-11-30T06:05:24.314Z","value":"LEARNER","valueType":"string"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T06:05:49.554Z"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T06:05:53.302Z"}
+{"level":"error","message":"500 - Cast to ObjectId failed for value \"LEARNER\" (type string) at path \"_id\" for model \"Role\" - /auth/signup - POST - ::1","timestamp":"2023-11-30T06:05:53.318Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\"LEARNER\"","timestamp":"2023-11-30T06:05:53.321Z","value":"LEARNER","valueType":"string"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T06:06:36.225Z"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T06:08:02.277Z"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T06:08:26.292Z"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T06:09:10.842Z"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T06:10:03.249Z"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T06:14:02.146Z"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T06:14:49.146Z"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T06:15:41.092Z"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T06:23:20.836Z"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T06:23:21.201Z"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T06:23:30.318Z"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T06:23:57.200Z"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T06:24:00.376Z"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T06:24:19.383Z"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T06:25:17.093Z"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T06:25:40.418Z"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T06:25:43.113Z"}
+{"level":"error","message":"500 - __dirname is not defined - /auth/login - POST - ::1","timestamp":"2023-11-30T06:25:43.215Z"}
+{"level":"error","timestamp":"2023-11-30T06:25:43.216Z"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T06:28:06.342Z"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T06:28:11.531Z"}
+{"level":"error","message":"500 - ENOENT: no such file or directory, open 'D:\\Aman\\node_typescript\\keys\\private.pem' - /auth/login - POST - ::1","timestamp":"2023-11-30T06:28:11.741Z"}
+{"code":"ENOENT","errno":-4058,"level":"error","path":"D:\\Aman\\node_typescript\\keys\\private.pem","syscall":"open","timestamp":"2023-11-30T06:28:11.742Z"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T06:28:55.833Z"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T06:28:57.140Z"}
+{"level":"error","message":"500 - ENOENT: no such file or directory, open 'D:\\Aman\\node_typescript\\build\\keys\\private.pem' - /auth/login - POST - ::1","timestamp":"2023-11-30T06:28:57.335Z"}
+{"code":"ENOENT","errno":-4058,"level":"error","path":"D:\\Aman\\node_typescript\\build\\keys\\private.pem","syscall":"open","timestamp":"2023-11-30T06:28:57.335Z"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T06:29:01.054Z"}
+{"level":"error","message":"500 - ENOENT: no such file or directory, open 'D:\\Aman\\node_typescript\\build\\keys\\private.pem' - /auth/login - POST - ::1","timestamp":"2023-11-30T06:29:01.169Z"}
+{"code":"ENOENT","errno":-4058,"level":"error","path":"D:\\Aman\\node_typescript\\build\\keys\\private.pem","syscall":"open","timestamp":"2023-11-30T06:29:01.170Z"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T06:29:47.372Z"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T06:30:04.470Z"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T06:30:29.346Z"}
+{"level":"error","message":"500 - ENOENT: no such file or directory, open 'D:\\Aman\\node_typescript\\build\\keys\\private.pem' - /auth/login - POST - ::1","timestamp":"2023-11-30T06:30:29.573Z"}
+{"code":"ENOENT","errno":-4058,"level":"error","path":"D:\\Aman\\node_typescript\\build\\keys\\private.pem","syscall":"open","timestamp":"2023-11-30T06:30:29.574Z"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T06:31:43.118Z"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T06:32:17.053Z"}
+{"level":"error","message":"500 - ENOENT: no such file or directory, open 'D:\\Aman\\node_typescript\\build\\keys\\private.pem' - /auth/login - POST - ::1","timestamp":"2023-11-30T06:32:17.202Z"}
+{"code":"ENOENT","errno":-4058,"level":"error","path":"D:\\Aman\\node_typescript\\build\\keys\\private.pem","syscall":"open","timestamp":"2023-11-30T06:32:17.204Z"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T06:33:09.613Z"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T06:35:00.867Z"}
+{"level":"info","message":"server running on port : 3000","timestamp":"2023-11-30T06:35:16.461Z"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T06:36:03.655Z"}
+{"level":"error","message":"500 - ENOENT: no such file or directory, open 'D:\\Aman\\node_typescript\\build\\keys\\private.pem' - /auth/login - POST - ::1","timestamp":"2023-11-30T06:36:03.864Z"}
+{"code":"ENOENT","errno":-4058,"level":"error","path":"D:\\Aman\\node_typescript\\build\\keys\\private.pem","syscall":"open","timestamp":"2023-11-30T06:36:03.864Z"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T06:36:31.500Z"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T06:54:15.935Z"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T06:57:17.428Z"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T06:57:31.312Z"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T06:57:54.368Z"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T06:58:18.801Z"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T06:59:22.208Z"}
+{"level":"info","message":{"_id":"65669cd873b3838cf1c5c803","comments":["Sample comment 1","Sample comment 2"],"key":"GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj","permissions":["GENERAL"],"status":true,"version":1},"timestamp":"2023-11-30T06:59:59.862Z"}

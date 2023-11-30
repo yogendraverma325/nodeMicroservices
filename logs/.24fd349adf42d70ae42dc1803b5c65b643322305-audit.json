@@ -1,0 +1,30 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\Aman\\node_typescript\\logs\\.24fd349adf42d70ae42dc1803b5c65b643322305-audit.json",
+    "files": [
+        {
+            "date": 1701078915223,
+            "name": "D:\\Aman\\node_typescript\\logs\\2023-11-27.log",
+            "hash": "46e8a7465d6951b90f37b987af5aa05e1271256e3f206eac8d62a34e5417aafc"
+        },
+        {
+            "date": 1701141402877,
+            "name": "D:\\Aman\\node_typescript\\logs\\2023-11-28.log",
+            "hash": "b0305e5c7f621df1e89f8f70f81b0a2e24abb0d8a86f8ba44c5b95e52325f1ac"
+        },
+        {
+            "date": 1701223601498,
+            "name": "D:\\Aman\\node_typescript\\logs\\2023-11-29.log",
+            "hash": "624ca3c19acafac381459e5e17cb87bf7c087ee5c5ed7102ff02cd28495062b3"
+        },
+        {
+            "date": 1701314765494,
+            "name": "D:\\Aman\\node_typescript\\logs\\2023-11-30.log",
+            "hash": "20e690e16e4d1765258c97a72c7ac34754bc07b473149f68fa8eb9f76143b83c"
+        }
+    ],
+    "hashType": "sha256"
+}
