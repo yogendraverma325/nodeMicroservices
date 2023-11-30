@@ -1,13 +1,14 @@
-import { PublicRequest, RoleRequest } from 'app.request.js';
+import { ProtectedRequest, PublicRequest, RoleRequest } from 'app.request.js';
 import bcrypt from 'bcrypt';
 import crypto from 'crypto';
 import express from 'express';
 import { createTokens } from '../../auth/authUtils.js';
+import authentication from '../../auth/authentication.js';
 import { AuthFailureError, BadRequestError } from '../../core/ApiError.js';
-import { SuccessResponse } from '../../core/ApiResponse.js';
+import { SuccessMsgResponse, SuccessResponse } from '../../core/ApiResponse.js';
 import { RoleCode } from '../../database/model/Role.js';
 import User from '../../database/model/User.js';
-import KeyStoreRepo from '../../database/repository/KeyStoreRepo.js';
+import { default as KeyStoreRepo } from '../../database/repository/KeyStoreRepo.js';
 import UserRepo from '../../database/repository/UserRepo.js';
 import asyncHandler from '../../helpers/asyncHandler.js';
 import validator from '../../helpers/validator.js';
@@ -79,6 +80,18 @@ router.post(
       user: userData,
       tokens: tokens,
     }).send(res);
+  }),
+);
+
+/*-------------------------------------------------------------------------*/
+router.use(authentication);
+/*-------------------------------------------------------------------------*/
+
+router.delete(
+  '/',
+  asyncHandler(async (req: ProtectedRequest, res) => {
+    await KeyStoreRepo.remove(req.keystore._id);
+    new SuccessMsgResponse('Logout success').send(res);
   }),
 );
 
