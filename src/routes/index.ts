@@ -6,7 +6,7 @@ import permission from '../helpers/permission.js';
 import authRoutes from './auth/auth.js';
 import credential from './auth/credential.js';
 import token from './auth/token.js';
-// import blog from './blog';
+import { default as project } from './project/index.js';
 // import blogs from './blogs';
 import profile from './profile/index.js';
 
@@ -23,7 +23,8 @@ router.use('/auth', authRoutes);
 router.use('/token', token);
 router.use('/credential', credential);
 router.use('/profile', profile);
-// router.use('/blog', blog);
+router.use('/project', project);
+// router.use('/issue', issue);
 // router.use('/blogs', blogs);
 
 export default router;
