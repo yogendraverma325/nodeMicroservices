@@ -1,3 +1,4 @@
+import { Types } from 'mongoose';
 import Project, { ProjectModel } from '../model/Project.js';
 
 const AUTHOR_DETAIL = 'name profilePicUrl';
@@ -10,19 +11,28 @@ async function create(project: Project): Promise<Project> {
   return createdProject.toObject();
 }
 
-// async function update(blog: Blog): Promise<Blog | null> {
-//   blog.updatedAt = new Date();
-//   return BlogModel.findByIdAndUpdate(blog._id, blog, { new: true })
-//     .lean()
-//     .exec();
-// }
+async function update(project: Project): Promise<Project | null> {
+  project.updatedAt = new Date();
+  return ProjectModel.findByIdAndUpdate(project._id, project, { new: true })
+    .lean()
+    .exec();
+}
 
-// async function findInfoById(id: Types.ObjectId): Promise<Blog | null> {
-//   return BlogModel.findOne({ _id: id, status: true })
-//     .populate('author', AUTHOR_DETAIL)
-//     .lean()
-//     .exec();
-// }
+async function findProjectById(id: Types.ObjectId): Promise<Project | null> {
+  return (
+    ProjectModel.findOne({ _id: id, status: true })
+      // .populate('author', AUTHOR_DETAIL)
+      .lean()
+      .exec()
+  );
+}
+
+async function findUsersInProject(id: Types.ObjectId): Promise<Project | null> {
+  return ProjectModel.findById({ _id: id }, { users: 1, _id: 0 }).populate(
+    'users',
+    'name verified status email profilePicUrl',
+  );
+}
 
 // async function findInfoForPublishedById(
 //   id: Types.ObjectId,
@@ -90,9 +100,9 @@ async function create(project: Project): Promise<Project> {
 //   return findDetailedBlogs({ isSubmitted: true, status: true });
 // }
 
-// async function findAllPublished(): Promise<Blog[]> {
-//   return findDetailedBlogs({ isPublished: true, status: true });
-// }
+async function findAllProjects(): Promise<Project[]> {
+  return findProjects({ isPublished: true, status: true });
+}
 
 // async function findAllSubmissionsForWriter(user: User): Promise<Blog[]> {
 //   return findDetailedBlogs({ author: user, status: true, isSubmitted: true });
@@ -106,18 +116,17 @@ async function create(project: Project): Promise<Project> {
 //   return findDetailedBlogs({ author: user, status: true, isDraft: true });
 // }
 
-// async function findDetailedBlogs(
-//   query: Record<string, unknown>,
-// ): Promise<Blog[]> {
-//   return BlogModel.find(query)
-//     .select('+isSubmitted +isDraft +isPublished +createdBy +updatedBy')
-//     .populate('author', AUTHOR_DETAIL)
-//     .populate('createdBy', AUTHOR_DETAIL)
-//     .populate('updatedBy', AUTHOR_DETAIL)
-//     .sort({ updatedAt: -1 })
-//     .lean()
-//     .exec();
-// }
+async function findProjects(
+  query: Record<string, unknown>,
+): Promise<Project[]> {
+  return ProjectModel.find(query)
+    .select('+title +key +favorite +createdBy +updatedBy, +tasks')
+    .populate('createdBy', AUTHOR_DETAIL)
+    .populate('updatedBy', AUTHOR_DETAIL)
+    .sort({ updatedAt: -1 })
+    .lean()
+    .exec();
+}
 
 // async function findLatestBlogs(
 //   pageNumber: number,
@@ -185,6 +194,11 @@ async function create(project: Project): Promise<Project> {
 
 export default {
   create,
+  update,
+  findAllProjects,
+  findProjects,
+  findUsersInProject,
+  findProjectById,
   //   update,
   //   findInfoById,
   //   findInfoForPublishedById,

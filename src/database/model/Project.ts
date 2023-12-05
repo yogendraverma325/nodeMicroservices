@@ -30,6 +30,7 @@ export default interface Project {
   category?: string;
   scope: string;
   issueCounter?: number;
+  users: string[];
   tasks?: Types.ObjectId[] | ITask[];
   issues?: Types.ObjectId[] | IIssue[];
   createdBy?: User;
@@ -46,6 +47,7 @@ const schema = new Schema<Project>(
     description: String,
     draftText: String,
     projectLead: { type: Schema.Types.ObjectId, ref: 'User' },
+    users: [{ type: Schema.Types.ObjectId, ref: 'User' }],
     category: String,
     scope: {
       type: String,

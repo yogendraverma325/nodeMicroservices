@@ -14,6 +14,7 @@ export default interface User {
   email?: string;
   password?: string;
   roles: Role[];
+  projects: string[];
   verified?: boolean;
   status?: boolean;
   createdAt?: Date;
@@ -43,6 +44,7 @@ const schema = new Schema<User>(
       type: Schema.Types.String,
       select: false,
     },
+    projects: [{ type: Schema.Types.ObjectId, ref: 'Project' }],
     roles: {
       type: [
         {

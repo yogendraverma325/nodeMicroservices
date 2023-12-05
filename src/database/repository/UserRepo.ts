@@ -5,6 +5,11 @@ import { RoleModel } from '../model/Role.js';
 import User, { UserModel } from '../model/User.js';
 import KeyStoreRepo from './KeyStoreRepo.js';
 
+interface UserQuery {
+  _id?: { $in: string[] };
+  status: boolean;
+}
+
 async function exists(id: Types.ObjectId): Promise<boolean> {
   const user = await UserModel.exists({ _id: id, status: true });
   return user !== null && user !== undefined;
@@ -113,9 +118,25 @@ async function updateInfo(user: User): Promise<any> {
     .exec();
 }
 
+async function allUsers(): Promise<any> {
+  return UserModel.find({ status: true }).select('+email').lean().exec();
+}
+
+async function findUsersByIds(userIds?: string[]): Promise<any> {
+  const query: UserQuery = { status: true };
+
+  if (userIds && userIds.length > 0) {
+    query['_id'] = { $in: userIds };
+  }
+
+  return UserModel.find(query).select('+email').lean().exec();
+}
+
 export default {
   exists,
+  allUsers,
   findPrivateProfileById,
+  findUsersByIds,
   findById,
   findByEmail,
   findFieldsById,

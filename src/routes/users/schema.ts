@@ -11,7 +11,6 @@ export default {
     issues: Joi.array().items(Joi.string()), // Assuming issues are represented by their ObjectId strings
   }),
   projectId: Joi.object().keys({
-    id: JoiObjectId().required(),
+    id: JoiObjectId().optional(),
   }),
-  id: Joi.array().items(Joi.string()),
 };
