@@ -3,10 +3,9 @@ pipeline {
     
     environment {
         GITHUB_TOKEN = credentials('Github_Jenkins_AWS')
-        REMOTE_USERNAME = 'imsdev'
         CACHE_DIR = '.npm-cache' // Directory to cache npm dependencies
     }
-    }
+    
 
     stages {
         stage('Checkout') {
@@ -14,7 +13,7 @@ pipeline {
                 script {
                     checkout scm
                     //  checkout([$class: 'GitSCM', branches: [[name: 'vite-migration']], userRemoteConfigs: [[url: 'https://glpat-SkByuYAoxaDe7qPBJkz-@gitlab.com/project-plantmonitoring/plantmonitoringfrontend.git']]])
-                }
+                    }
                 }
             }
         
@@ -65,39 +64,39 @@ pipeline {
                 cleanWs()
             }
         }
-// FOR THE SAME SERVER
-        // stage('Unstash and Deploy to Folder') {
-        //     steps {
-        //         script {
-        //             // Unstash the artifacts
-        //             unstash 'dist-stash'
+        // FOR THE SAME SERVER
+        stage('Unstash and Deploy to Folder') {
+            steps {
+                script {
+                    // Unstash the artifacts
+                    unstash 'dist-stash'
 
-        //             // Move artifacts to the desired folder
-        //              sh 'mkdir -p /usr/share/nginx/html/plantwatch'
-        //             //sh 'rm -rf /usr/share/nginx/html/plantwatch/*'
-        //             sh 'mv build/* /usr/share/nginx/html/plantwatch'
-        //              // Commit the changes with a message
-        //             // sh 'git config user.email "jenkins@example.com"'
-        //             // sh 'git config user.name "Jenkins"'
-        //             // sh 'git add .'
-        //             // sh 'git commit -m "Deploy artifacts to custom folder"'
+                    // Move artifacts to the desired folder
+                     sh 'mkdir -p /usr/share/nginx/html/plantwatch'
+                    //sh 'rm -rf /usr/share/nginx/html/plantwatch/*'
+                        sh 'mv build/* /usr/share/nginx/html/plantwatch'
+                     // Commit the changes with a message
+                    // sh 'git config user.email "jenkins@example.com"'
+                    // sh 'git config user.name "Jenkins"'
+                    // sh 'git add .'
+                    // sh 'git commit -m "Deploy artifacts to custom folder"'
+                }
+            }
+        }
+        // stage('Deploy to Remote Server') {
+        //    steps {
+        //        script {
+        //             Unstash the artifacts
+        //            unstash 'dist-stash'
+
+        //             Use SSH key to authenticate
+        //            sshagent(['imsdevID']) {
+        //                 Securely copy artifacts to the remote server
+        //                sh "scp -o StrictHostKeyChecking=no -r dist/* ${REMOTE_USERNAME}@${REMOTE_HOST}:${REMOTE_DESTINATION_PATH}"
+        //             }
         //         }
         //     }
         // }
-        //stage('Deploy to Remote Server') {
-          //  steps {
-            //    script {
-                    // Unstash the artifacts
-              //      unstash 'dist-stash'
-
-                    // Use SSH key to authenticate
-                //    sshagent(['imsdevID']) {
-                        // Securely copy artifacts to the remote server
-                  //      sh "scp -o StrictHostKeyChecking=no -r dist/* ${REMOTE_USERNAME}@${REMOTE_HOST}:${REMOTE_DESTINATION_PATH}"
-                    //}
-                //}
-            //}
-        //}
         // stage('Deploy to GitHub Pages') {
         //     steps {
         //         script {
@@ -113,5 +112,6 @@ pipeline {
         //         }
         //     }
         // }
-    // }
+    }
 }
+
