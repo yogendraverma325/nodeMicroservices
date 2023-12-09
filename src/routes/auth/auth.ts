@@ -21,7 +21,6 @@ router.post(
   '/login',
   validator(schema.credential),
   asyncHandler(async (req: PublicRequest, res) => {
-    console.log('REQ', res);
     const user = await UserRepo.findByEmail(req.body.email);
 
     if (!user) throw new BadRequestError('User not registered');
@@ -88,7 +87,7 @@ router.use(authentication);
 /*-------------------------------------------------------------------------*/
 
 router.delete(
-  '/',
+  '/logout',
   asyncHandler(async (req: ProtectedRequest, res) => {
     await KeyStoreRepo.remove(req.keystore._id);
     new SuccessMsgResponse('Logout success').send(res);

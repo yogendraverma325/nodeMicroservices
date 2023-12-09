@@ -129,7 +129,6 @@ const expressLoader = (app: Application): void => {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
       if (err instanceof ApiError) {
-        console.log('in error');
         ApiError.handle(err, res);
         if (err.type === ErrorType.INTERNAL)
           Logger.error(
