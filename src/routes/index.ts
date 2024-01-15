@@ -6,6 +6,7 @@ import permission from '../helpers/permission.js';
 import authRoutes from './auth/auth.js';
 import credential from './auth/credential.js';
 import token from './auth/token.js';
+import verifyRoutes from './auth/verify.js';
 import issue from './issue/index.js';
 import profile from './profile/index.js';
 import { default as project } from './project/index.js';
@@ -20,7 +21,7 @@ router.use(apiKey);
 router.use(permission(Permission.GENERAL));
 /*---------------------------------------------------------*/
 router.use('/auth', authRoutes);
-// router.use('/signup', signup);
+router.use('/verify', verifyRoutes);
 router.use('/token', token);
 router.use('/credential', credential);
 router.use('/profile', profile);

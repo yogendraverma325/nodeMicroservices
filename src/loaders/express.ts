@@ -67,7 +67,7 @@ const expressLoader = (app: Application): void => {
     app.use('/api-docs', swaggerUi.serve);
     app.get('/api-docs', swaggerUi.setup(swaggerDocument));
 
-    app.use('/', routes);
+    app.use('/api', routes);
     // catch 404 and forward to error handler
     app.use((req, res, next) => next(new NotFoundError()));
 
