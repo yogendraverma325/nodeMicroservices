@@ -19,7 +19,6 @@ export default {
     email: Joi.string().required().email(),
     password: Joi.string().required().min(6),
     profilePicUrl: Joi.string().optional().uri(),
-    role: Joi.string(),
   }),
   resetPassword: Joi.object().keys({
     email: Joi.string().required().email(),
