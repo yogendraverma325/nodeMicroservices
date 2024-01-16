@@ -7,7 +7,7 @@ import Logger from './core/Logger.js';
 import loader from './loaders/index.js';
 import initializeSocket from './loaders/socket.io.js';
 
-cache; // cache initialization
+// cache; // cache initialization
 const app = express();
 
 // Socket.io
